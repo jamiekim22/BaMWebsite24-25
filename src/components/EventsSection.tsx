@@ -54,7 +54,7 @@ export default function EventsSection() {
             Previous Symposium (2021)
           </h2>
           <p className="text-lg">
-            Get a glimpse of what we'll be doing.
+            Get a glimpse of what we&apos;ll be doing.
           </p>
 
           {/* Image placeholder for the previous symposium’s flyer/promo */}

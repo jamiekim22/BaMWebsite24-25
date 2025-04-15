@@ -79,7 +79,7 @@ export default function ContactSection() {
         clearTimeout(autoScrollTimeoutRef.current);
       }
     };
-  }, [currentPage]);
+  }, [currentPage, resetAutoScrollTimer]);
 
   return (
     <section
