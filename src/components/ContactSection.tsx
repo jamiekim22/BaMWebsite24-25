@@ -18,7 +18,7 @@ const team = [
 
 // Group team members into pages of 4
 const groupSize = 4;
-const pages = [];
+const pages: { name: string; role: string; image: string; }[][] = [];
 for (let i = 0; i < team.length; i += groupSize) {
   pages.push(team.slice(i, i + groupSize));
 }
