@@ -1,13 +1,99 @@
+import Image from "next/image"
+
 export default function EventsSection() {
-    return (
-      <section className="min-h-screen bg-white text-black flex items-center justify-center px-8" id="about">
-        <div className="max-w-2xl text-center space-y-6">
-          <h2 className="text-4xl font-bold">Events</h2>
-          <p className="text-lg">
-          EVENTS
-          </p>
+  return (
+    <section
+      id="events"
+      className="
+        bg-[#3C1868]
+        text-white
+        px-4
+        py-20
+      "
+    >
+      {/* Main container to center the content */}
+      <div className="max-w-5xl mx-auto space-y-12">
+        {/* "Our Events" heading */}
+        <div>
+          <h4 className="text-sm uppercase tracking-wide mb-2">Our Events</h4>
         </div>
-      </section>
-    );
-  }
-  
+
+        {/* Upcoming event */}
+        <div className="space-y-3">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            Upcoming: Music Symposium in May 2025
+          </h2>
+          <p className="text-lg">
+            Sign up on our{" "}
+            <a
+              href="#signup"
+              className="underline hover:opacity-80"
+            >
+              mailing list
+            </a>{" "}
+            to be notified when registration opens.
+          </p>
+
+          {/* Upcoming Highlight image */}
+          <div className="items-center justify-between">
+            <Image
+            src="/events/symposium.png"
+            alt="image"
+            width={700}
+            height={700}
+            loading="lazy"
+            style={{objectFit: "contain"}}	
+            />
+          </div>
+
+        </div>
+
+        {/* Previous Symposium */}
+        <div className="space-y-3">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            Previous Symposium (2021)
+          </h2>
+          <p className="text-lg">
+            Get a glimpse of what we'll be doing.
+          </p>
+
+          {/* Image placeholder for the previous symposium’s flyer/promo */}
+          <div className="w-full h-48 md:h-64 bg-gray-300 rounded-md" />
+        </div>
+
+        {/* Example: BaM Community Events (Optional Extra) */}
+        <div className="space-y-3">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            BaM Community Events
+          </h2>
+          <p className="text-lg">
+            Join us for some fun, casual events! Including, but not limited to:
+            journal clubs, study cafes, and more.
+          </p>
+
+          {/* Placeholder row of event flyers */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Image
+              src="/events/journalclub.png"
+              alt="image"
+              width={500}
+              height={500}
+            />
+            <Image
+              src="/events/lofistudycafe.png"
+              alt="image"
+              width={500}
+              height={500}
+            />
+            <Image
+              src="/events/OCTOBER EVENT POST.png"
+              alt="image"
+              width={500}
+              height={500}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

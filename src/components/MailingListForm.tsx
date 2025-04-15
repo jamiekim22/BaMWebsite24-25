@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-export default function MailingListForm() {
+export default function HeroSection() {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('');
 
@@ -24,8 +24,7 @@ export default function MailingListForm() {
   return (
     <section
       id="signup"
-      // Use your actual image file path here. For example: /images/bam-hero.png
-      style={{ backgroundImage: "url('/images/bam-hero.png')" }}
+      style={{ backgroundImage: "url('/images/bambg1(3by2).png')" }}
       className="
         relative 
         min-h-screen 
@@ -33,14 +32,25 @@ export default function MailingListForm() {
         bg-cover 
         bg-center 
         flex 
-        items-end 
+        flex-col 
+        items-center 
         justify-center
+        px-4
       "
     >
-      {/* Optional dark/gradient overlay, if you want to shade the background a bit
-      <div className="absolute inset-0 bg-black bg-opacity-20"></div> */}
+      {/* -- TEXT OVERLAY -- */}
+      <div className="text-center mb-8 max-w-4xl">
+        <h1 className="text-4xl md:text-7xl font-bold leading-tight text-gray-900 drop-shadow-lg">
+          THE BRAIN AND MUSIC <br className="hidden sm:block" />
+          <span className="text-4xl md:text-7xl font-bold">CLUB</span>
+        </h1>
+        <p className="text-lg md:text-2xl text-gray-900 mt-4 drop-shadow-lg">
+          at the University of British Columbia
+        </p>
+      </div>
 
-      <div className="relative z-10 w-full max-w-4xl p-4 flex flex-col items-center mb-10">
+      {/* -- SIGNUP FORM -- */}
+      <div className="w-full max-w-4xl flex flex-col items-center">
         <form
           onSubmit={handleSubmit}
           className="
@@ -49,11 +59,6 @@ export default function MailingListForm() {
             flex-col 
             sm:flex-row 
             items-center 
-            bg-white/90 
-            backdrop-blur 
-            rounded-md 
-            shadow-lg 
-            p-4
           "
         >
           <input
@@ -69,6 +74,7 @@ export default function MailingListForm() {
               p-3 
               border 
               border-gray-300
+              bg-white
               text-gray-800 
               rounded 
               mb-2 
@@ -84,12 +90,15 @@ export default function MailingListForm() {
             className="
               w-full 
               sm:w-auto
-              bg-black 
+              bg-gradient-to-r 
+              from-blue-400 
+              to-indigo-500
               text-white 
               py-3 
               px-6 
               rounded 
-              hover:bg-gray-800
+              hover:from-blue-500 
+              hover:to-indigo-600
               transition-colors
             "
           >

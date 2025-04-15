@@ -1,7 +1,22 @@
 export default function AboutSection() {
   return (
-    <section className="min-h-screen bg-white text-black flex items-center justify-center px-8" id="about">
-      <div className="max-w-2xl text-center space-y-6">
+    <section 
+      id="about"
+      style={{ backgroundImage: "url('/images/bambg1(3by2).png')" }}
+      className="
+        relative 
+        bg-no-repeat 
+        bg-cover 
+        bg-center 
+        flex 
+        flex-col 
+        items-center 
+        justify-center
+        px-4
+        py-20
+      "
+    >
+      <div className="max-w-2xl text-center space-y-6 text-gray-900">
         <h2 className="text-4xl font-bold">We’re at the intersection of music & neuroscience.</h2>
         <p className="text-lg">
         UBC Brain and Music (BaM) is a unique student organization where people come together to explore music cognition 
