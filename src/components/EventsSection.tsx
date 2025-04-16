@@ -57,8 +57,13 @@ export default function EventsSection() {
             Get a glimpse of what we&apos;ll be doing.
           </p>
 
-          {/* Image placeholder for the previous symposium’s flyer/promo */}
-          <div className="w-full h-48 md:h-64 bg-gray-300 rounded-md" />
+          <iframe width="830" height="470" 
+          src="https://www.youtube.com/embed/HVKh456QQbA?si=_B4DrCWSRJ4ysx_V" 
+          title="YouTube video player" frameBorder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+          picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" 
+          allowFullScreen></iframe>
+
         </div>
 
         {/* Example: BaM Community Events (Optional Extra) */}
