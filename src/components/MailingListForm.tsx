@@ -1,9 +1,9 @@
 'use client';
-import { useState } from 'react';
+import { useState, ReactNode } from 'react';
 
 export default function HeroSection() {
   const [email, setEmail] = useState('');
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState<ReactNode>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -14,10 +14,36 @@ export default function HeroSection() {
     });
 
     if (res.ok) {
-      setStatus('Thanks for subscribing!');
+      setStatus(
+        <>
+          Signed up! Stay tuned for updates on our{' '}
+          <a
+            href="https://discord.com/invite/CZjYxJ7J8p"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-300 hover:text-blue-400"
+          >
+            discord
+          </a>{' '}
+          :)
+        </>
+      );
       setEmail('');
     } else {
-      setStatus('Something went wrong.');
+      setStatus(
+        <>
+          Sorry! Something went wrong :( Try later, or join our{' '}
+          <a
+            href="https://discord.com/invite/CZjYxJ7J8p"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-300 hover:text-blue-400"
+          >
+            discord
+          </a>
+          !
+        </>
+      );
     }
   };
 

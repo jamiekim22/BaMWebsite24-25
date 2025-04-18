@@ -14,7 +14,7 @@ export async function addEmailToSheet(email: string) {
 
   await sheets.spreadsheets.values.append({
     spreadsheetId: process.env.GOOGLE_SHEET_ID,
-    range: 'Sheet1!A:A',
+    range: 'Mailing List!A:A',
     valueInputOption: 'RAW',
     requestBody: { values: [[email]] },
   });
