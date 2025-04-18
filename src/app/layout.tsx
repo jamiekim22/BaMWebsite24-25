@@ -38,7 +38,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${robotoMono.variable} ${rubik.variable} antialiased`}
+        className={`
+          /* fonts */
+          ${geistSans.variable} ${geistMono.variable} 
+          ${robotoMono.variable} ${rubik.variable} antialiased
+          `}
       >
         {children}
       </body>

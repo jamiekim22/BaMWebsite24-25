@@ -8,14 +8,14 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main className="scroll-smooth">
-      <NavBar />
-      <MailingListForm />
+    <main className="scroll-smooth relative" >
+      <NavBar/>
+      <MailingListForm/>
       <Statistics/>
-      <AboutSection />
-      <EventsSection />
+      <AboutSection/>
+      <EventsSection/>
       <Execs/>
-      <Footer />
+      <Footer/>
     </main>
   );
 }

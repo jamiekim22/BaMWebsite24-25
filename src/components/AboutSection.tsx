@@ -2,18 +2,11 @@ export default function AboutSection() {
   return (
     <section 
       id="about"
-      style={{ backgroundImage: "url('/images/bambg1(3by2).png')" }}
       className="
-        relative 
-        bg-no-repeat 
-        bg-cover 
-        bg-center 
-        flex 
-        flex-col 
-        items-center 
-        justify-center
-        px-4
-        py-20
+        relative bg-transparent
+        flex flex-col 
+        items-center justify-center
+        px-4 py-20
       "
     >
       <div className="max-w-2xl text-center space-y-6 text-gray-900">

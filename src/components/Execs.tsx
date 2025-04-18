@@ -12,7 +12,7 @@ const team = [
   { name: "Jamie Kim", role: "Developer", image: "/exec/jamie.png" },
   { name: "Leo Chung", role: "Technical", image: "/exec/leo.png" },
   { name: "Stephen Huang", role: "Finance", image: "/exec/stephen.png" },
-  { name: "Katherine Hsu", role: "General", image: "/exec/katherine.png" },
+  { name: "Katherine Hsu", role: "Operations", image: "/exec/katherine.png" },
   { name: "Sophia Yuan", role: "General", image: "/exec/sophia.png" },
 ];
 
@@ -24,7 +24,7 @@ for (let i = 0; i < team.length; i += groupSize) {
 }
 const totalPages = pages.length;
 
-export default function ContactSection() {
+export default function ExecSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const autoScrollTimeoutRef = useRef<number | null>(null);
   const [currentPage, setCurrentPage] = useState(0);
@@ -84,8 +84,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      style={{ backgroundImage: "url('/images/bambg2(3by2).png')" }}
-      className="relative bg-no-repeat bg-cover bg-center text-black px-8 py-20"
+      className="relative bg-transparent px-8 py-20 text-black"
     >
       <div className="max-w-5xl mx-auto space-y-8">
         {/* Heading */}
