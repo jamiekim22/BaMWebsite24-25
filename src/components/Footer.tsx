@@ -35,7 +35,7 @@ export default function Footer() {
                 height={28}
               />
             </Link>
-            <Link href="#" aria-label="Discord">
+            <Link href="https://discord.com/invite/CZjYxJ7J8p" aria-label="Discord">
               <Image
                 src="/icons/discord.png"
                 alt="Discord"
@@ -43,7 +43,7 @@ export default function Footer() {
                 height={30}
               />
             </Link>
-            <Link href="ubc.bam@gmail.com" aria-label="Email">
+            <Link href="mailto:ubc.bam@gmail.com" aria-label="Email">
               <Image
                 src="/icons/email.png"
                 alt="Email"
