@@ -24,7 +24,6 @@ export default function HeroSection() {
   return (
     <section
       id="signup"
-      style={{ backgroundImage: "url('/images/bambg1(3by2).png')" }}
       className="
         relative 
         min-h-screen 
@@ -36,21 +35,35 @@ export default function HeroSection() {
         items-center 
         justify-center
         px-4
+        overflow-hidden
       "
     >
-      {/* -- TEXT OVERLAY -- */}
-      <div className="text-center mb-8 max-w-4xl">
-        <h1 className="text-4xl md:text-7xl font-bold leading-tight text-gray-900 drop-shadow-lg">
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/videos/bam2021.webm"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+
+      {/* Darken Overlay */}
+      <div className="absolute inset-0 bg-black opacity-40" />
+
+      {/* Text */}
+      <div className="relative z-10 text-center mb-8 max-w-4xl">
+        <h1 className="text-4xl md:text-7xl font-bold leading-tight text-white drop-shadow-lg">
           THE BRAIN AND MUSIC <br className="hidden sm:block" />
           <span className="text-4xl md:text-7xl font-bold">CLUB</span>
         </h1>
-        <p className="text-lg md:text-2xl text-gray-900 mt-4 drop-shadow-lg">
+        <p className="text-lg md:text-2xl text-gray-200 mt-4 drop-shadow-lg">
           at the University of British Columbia
         </p>
       </div>
 
-      {/* -- SIGNUP FORM -- */}
-      <div className="w-full max-w-4xl flex flex-col items-center">
+      {/* Signup Form */}
+      <div className="relative z-10 w-full max-w-4xl flex flex-col items-center">
         <form
           onSubmit={handleSubmit}
           className="
