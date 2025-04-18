@@ -57,12 +57,13 @@ export default function EventsSection() {
             Get a glimpse of what we&apos;ll be doing.
           </p>
 
-          <iframe width="830" height="470" 
+          <div className="video">
+          <iframe className="responsive-iframe"
           src="https://www.youtube.com/embed/HVKh456QQbA?si=_B4DrCWSRJ4ysx_V" 
-          title="YouTube video player" frameBorder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
           picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" 
           allowFullScreen></iframe>
+          </div>
 
         </div>
 

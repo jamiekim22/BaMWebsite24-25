@@ -85,7 +85,7 @@ export default function ContactSection() {
     <section
       id="contact"
       style={{ backgroundImage: "url('/images/bambg2(3by2).png')" }}
-      className="relative bg-white text-black px-8 py-20"
+      className="relative bg-no-repeat bg-cover bg-center text-black px-8 py-20"
     >
       <div className="max-w-5xl mx-auto space-y-8">
         {/* Heading */}

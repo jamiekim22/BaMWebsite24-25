@@ -27,28 +27,28 @@ export default function Footer() {
 
           {/* Social Icons - replace '#' with actual links */}
           <div className="flex items-center space-x-4">
-            <Link href="#" aria-label="Instagram">
+            <Link href="https://www.instagram.com/ubc.bam/" aria-label="Instagram">
               <Image
                 src="/icons/instagram.png"
                 alt="Instagram"
-                width={24}
-                height={24}
-              />
-            </Link>
-            <Link href="#" aria-label="Email">
-              <Image
-                src="/icons/email.png"
-                alt="Email"
-                width={24}
-                height={24}
+                width={28}
+                height={28}
               />
             </Link>
             <Link href="#" aria-label="Discord">
               <Image
                 src="/icons/discord.png"
                 alt="Discord"
-                width={24}
-                height={24}
+                width={30}
+                height={30}
+              />
+            </Link>
+            <Link href="ubc.bam@gmail.com" aria-label="Email">
+              <Image
+                src="/icons/email.png"
+                alt="Email"
+                width={36}
+                height={36}
               />
             </Link>
           </div>
@@ -56,7 +56,7 @@ export default function Footer() {
           {/* Vinyl Record(s) - optional decorative image */}
           <div className="mt-2">
             <Image
-              src="/images/vinyls.png"
+              src="/icons/vinyls.png"
               alt="Vinyl Records"
               width={100}
               height={100}
@@ -94,13 +94,6 @@ export default function Footer() {
         <a href="#top" className="hover:opacity-80">Back To Top</a>
       </div>
 
-      
-
-      {/* Copyright */}
-      <div className="mt-6 text-center text-xs text-white/80">
-        © 2025 Copyright by UBC Brain and Music. All rights reserved.
-      </div>
-
       {/* Gradient Line */}
       <div
         className="
@@ -115,6 +108,11 @@ export default function Footer() {
           to-purple-500
         "
       />
+
+      {/* Copyright */}
+      <div className="mt-6 text-center text-xs text-white/80">
+        © 2025 Copyright by UBC Brain and Music. All rights reserved.
+      </div>
 
     </footer>
   );
