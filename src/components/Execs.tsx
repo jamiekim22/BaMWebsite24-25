@@ -14,6 +14,7 @@ const team = [
   { name: "Stephen Huang", role: "Finance", image: "/exec/stephen.png" },
   { name: "Katherine Hsu", role: "Operations", image: "/exec/katherine.png" },
   { name: "Sophia Yuan", role: "General", image: "/exec/sophia.png" },
+  { name: "Rae J", role: "Mentor", image: "/exec/rae.png" },
 ];
 
 // Group team members into pages of 4
