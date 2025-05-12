@@ -27,7 +27,7 @@ const rubik = Rubik({
 
 export const metadata: Metadata = {
   title: "BaM Website 2024/25",
-  description: "Coded by the goat Jamie Kim",
+  description: "Coded by Jamie Kim \nDesigned by Iris Liu",
 };
 
 export default function RootLayout({
