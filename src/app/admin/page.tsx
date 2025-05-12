@@ -1,6 +1,6 @@
 // src/app/admin/page.tsx
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import LogoutButton from "./Logout";
 
@@ -8,7 +8,7 @@ export default async function AdminPage() {
   const session = await getServerSession(authOptions);
   if (!session?.user?.isAdmin) {
     // not logged in → bounce to default NextAuth UI
-    redirect(`/api/auth/signin?callbackUrl=${encodeURIComponent("/admin")}`);
+    redirect(`/api/auth/signin?callbackUrl=/admin`);
   }
   return (
     <div className="p-8">
