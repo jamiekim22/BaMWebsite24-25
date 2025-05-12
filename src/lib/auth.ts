@@ -17,7 +17,7 @@ export const authOptions: AuthOptions = {
           creds?.username === process.env.ADMIN_USERNAME &&
           creds?.password === process.env.ADMIN_PASSWORD
         ) {
-          return { id: 1, name: "Site Admin" };
+          return { id: "1", name: "Site Admin" };
         }
         return null;
       }
@@ -34,6 +34,6 @@ export const authOptions: AuthOptions = {
       return session;
     }
   },
-  // remove pages.signIn override if you’re using the built-in UI
+  // remove pages.signIn override if you're using the built-in UI
   // pages: { signIn: "/auth/signin" }
 };
