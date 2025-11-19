@@ -46,9 +46,9 @@ export default function NavBar() {
             <a href="#about" className="hover:opacity-80 transition">
               About
             </a>
-            <a href="#symposium" className="hover:opacity-80 transition">
+            {/* <a href="/" className="hover:opacity-80 transition">
               Symposium
-            </a>
+            </a> */}
             <a href="#events" className="hover:opacity-80 transition">
               Events
             </a>

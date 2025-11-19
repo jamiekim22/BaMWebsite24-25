@@ -26,7 +26,7 @@ const rubik = Rubik({
 
 
 export const metadata: Metadata = {
-  title: "BaM Website 2024/25",
+  title: "The UBC Brain and Music Club",
   description: "Coded by Jamie Kim \nDesigned by Iris Liu",
 };
 

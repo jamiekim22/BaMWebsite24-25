@@ -21,7 +21,7 @@ export default function EventsSection() {
         {/* Upcoming event */}
         <div className="space-y-3">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Upcoming: Music Symposium in May 2025
+          Upcoming event: BaM Social Dec 2025! Date TBD!!
           </h2>
           <p className="text-lg">
             Sign up on our{" "}
@@ -32,6 +32,18 @@ export default function EventsSection() {
               mailing list
             </a>{" "}
             to be notified when registration opens.
+          </p>
+        </div>
+
+        {/* Upcoming event */}
+        <div className="space-y-3">
+          <h2 className="text-3xl md:text-4xl font-bold">
+          Previous Events
+          </h2>
+          <p>
+          <a href="https://www.instagram.com/p/DORm8N6kn4j/?img_index=1">
+            <u>Music and the Brain</u>
+          </a>
           </p>
 
           {/* Upcoming Highlight image */}
@@ -47,14 +59,29 @@ export default function EventsSection() {
           </div>
 
         </div>
-
+        
         {/* Previous Symposium */}
         <div className="space-y-3">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Previous Symposium (2021)
+            Previous Symposiums
           </h2>
           <p className="text-lg">
-            Get a glimpse of what we&apos;ll be doing.
+          BaM Symposium 2025
+          </p>
+
+          <div className="video">
+          <iframe className="responsive-iframe"
+          src="https://youtu.be/CLRZ4z8C7Pg?si=8A61a1yaDL-H7_Ag" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+          picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" 
+          allowFullScreen></iframe>
+          </div>
+
+        </div>
+        {/* Previous Symposium */}
+        <div className="space-y-3">
+          <p className="text-lg">
+          BaM Symposium 2021 Teaser
           </p>
 
           <div className="video">
